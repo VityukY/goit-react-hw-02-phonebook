@@ -1,0 +1,39 @@
+.phonebook {
+   width: 400px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.phonebook__titel {
+text-align: center;
+}
+.phonebook__inputarea {
+   display: flex;
+   justify-content: space-between;
+
+   height: 100px;
+}
+.phonebook__addButton {
+   height: 24px;
+}
+.phonebook_form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+}
+.phonebook__filter{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+}
+.phonebook__list{ 
+   list-style: none;
+   padding-left: 0;
+}
+.pnonebook__listItem{
+   display: flex;
+   justify-content: space-between;
+   height: 40px;
+   align-items: center;
+}

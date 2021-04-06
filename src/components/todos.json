@@ -1,5 +1,0 @@
-[
-   { "id": "id-1", "text": "Вучить основы реакт", "completed": true },
-   { "id": "id-2", "text": "Разобратся с React Router", "completed": false },
-   { "id": "id-3", "text": "Пережить Redux", "completed": false }
-]
