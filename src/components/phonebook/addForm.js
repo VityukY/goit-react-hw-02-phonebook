@@ -8,16 +8,18 @@ class Form extends Component {
 
    addContact = e => {
       e.preventDefault();
-
       this.props.onSubmit(this.state);
       this.reset();
    };
+
    changeHadler = e => {
       this.setState({ [e.currentTarget.name]: e.currentTarget.value });
    };
+
    reset() {
       this.setState({ name: '', number: '' });
    }
+
    render() {
       return (
          <form onSubmit={this.addContact} className="phonebook_form">

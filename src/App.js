@@ -23,6 +23,7 @@ class App extends Component {
          contact.name.toLowerCase().includes(normalizeFilter),
       );
    };
+
    updateContacts = ({ name, number }) => {
       if (this.checkDuplicates(name)) {
          alert(`${name} уже в списке`);
@@ -37,15 +38,18 @@ class App extends Component {
          contacts: [newContact, ...prevState.contacts],
       }));
    };
+
    checkDuplicates = name => {
       const currentContactsName = this.state.contacts.map(
          contact => contact.name,
       );
       return currentContactsName.includes(name);
    };
+
    changeFilter = e => {
       this.setState({ filter: e.currentTarget.value });
    };
+
    deleteContact = id => {
       this.setState(prevState => ({
          contacts: prevState.contacts.filter(contact => contact.id !== id),
